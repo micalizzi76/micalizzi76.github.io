@@ -4,17 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museo Scientifico</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Benvenuti al Museo Scientifico</h1>
-    <p>Scansiona i QR code sugli strumenti per conoscere la loro storia e il loro uso.</p>
-    <ul>
-        <li><a href="strumenti/microscopio.html">Microscopio</a></li>
-        <li><a href="strumenti/telescopio.html">Telescopio</a></li>
-        <li><a href="strumenti/bussola.html">Bussola</a></li>
-        <!-- Aggiungi altri strumenti -->
-    </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Museo Scientifico</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Esposizioni</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatti</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-dark text-light text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Benvenuti al Museo Scientifico</h1>
+            <p class="lead">Esplora gli strumenti che hanno cambiato la storia della scienza. Scansiona i QR code per scoprire di più!</p>
+        </div>
+    </header>
+
+    <!-- Strumenti Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Gli Strumenti Esposti</h2>
+            <div class="row">
+                <!-- Strumento 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/microscopio.jpg" class="card-img-top" alt="Microscopio">
+                        <div class="card-body">
+                            <h5 class="card-title">Microscopio</h5>
+                            <p class="card-text">Scopri la storia e l'uso del microscopio, uno degli strumenti più importanti per la ricerca scientifica.</p>
+                            <a href="strumenti/microscopio.html" class="btn btn-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Strumento 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/telescopio.jpg" class="card-img-top" alt="Telescopio">
+                        <div class="card-body">
+                            <h5 class="card-title">Telescopio</h5>
+                            <p class="card-text">Il telescopio ha rivoluzionato il modo in cui osserviamo l'universo. Scansiona il QR per maggiori dettagli.</p>
+                            <a href="strumenti/telescopio.html" class="btn btn-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Strumento 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm">
+                        <img src="images/bussola.jpg" class="card-img-top" alt="Bussola">
+                        <div class="card-body">
+                            <h5 class="card-title">Bussola</h5>
+                            <p class="card-text">La bussola è uno strumento cruciale per la navigazione. Scopri come funziona e la sua evoluzione.</p>
+                            <a href="strumenti/bussola.html" class="btn btn-primary">Scopri di più</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Museo Scientifico. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
